@@ -1,0 +1,7 @@
+jobs:
+  call-shared-labeler:
+     uses: joebochill/test-gh-actions/.github/workflows/label-master-pr.yml@master
+     secrets: inherit
+  call-shared-labeler:
+     uses: joebochill/test-gh-actions/.github/workflows/label-pr.yml@master
+     secrets: inherit
