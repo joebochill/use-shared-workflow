@@ -1,5 +1,10 @@
+name: Call a reusable workflow
+
+on:
+  pull_request_target:
+
 jobs:
-  call-shared-labeler:
+  call-shared-master-labeler:
      uses: joebochill/test-gh-actions/.github/workflows/label-master-pr.yml@master
      secrets: inherit
   call-shared-labeler:
